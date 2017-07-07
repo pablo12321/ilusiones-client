@@ -1,12 +1,8 @@
 /*---- GENERAL ----*/
-html,body{
-  height:100%;
-  width: 100%;
-}
 body{
   margin:0;
   padding: 0;
-  background-color: #333;
+  background-color: #283a62;
   font-family:sans-serif;
 }
 aside ul a:link,aside ul a:visited{
@@ -14,10 +10,12 @@ aside ul a:link,aside ul a:visited{
 }
 /*---- ASIDE ----*/
 aside{
+  position: fixed;
+  top:0;
+  left: 0;
   text-align: center;
-  display: inline-block;
   width: 250px;
-  background-color: #111;
+  background-color: #031667;
   height: 100%;
   box-shadow: 5px 0 10px rgba(0,0,0,0.3),inset 0 0 50px rgba(0,0,0,0.5)
 }
@@ -28,18 +26,26 @@ aside img{
 aside ul{
   margin:0;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 2px;
 }
 aside ul li{
   text-decoration: none;
   text-align: center;
   width: 100%;
-  margin:0 0 5px 0;
+  margin:0 0 2px 0;
   padding: 20px 0;
   background: linear-gradient(to bottom, #fff , #eee);
-  border-radius: 6px;
+  border-radius: 2px;
   box-shadow: inset 0 0 30px rgba(0,0,0,0.3);
   color:rgb(36, 36, 36);
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-size: 20px;
+}
+/*---- BOARD and PAGES ----*/
+#board{
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 250px;
 }
